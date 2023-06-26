@@ -5,19 +5,19 @@ channels:
   - nvidia
 
 dependencies:
-  - python
+  - python=3.10
   - pytorch==2.0.0
   - pytorch-cuda==11.8
   - torchvision==0.15.0
   - pip
   - pip:
       - gym[atari,accept-rom-license]==0.25.2
-      - gym3
-      - cloudpickle
-      - pytest
-      - more-itertools
+      - gym3==0.3.3
+      - cloudpickle==2.2.1
+      - pytest==7.4.0
+      - more-itertools==9.1.0
       # common environments
-      - atari-py
-      - procgen
+      - atari-py==0.2.9
+      - procgen==0.10.7
       # extra packages
-      - opencv-python
+      - opencv-python==4.7.0.72
