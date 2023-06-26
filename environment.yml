@@ -1,0 +1,23 @@
+name: minipi
+
+channels:
+  - pytorch
+  - nvidia
+
+dependencies:
+  - python
+  - pytorch==2.0.0
+  - pytorch-cuda==11.8
+  - torchvision==0.15.0
+  - pip
+  - pip:
+      - gym[atari,accept-rom-license]==0.25.2
+      - gym3
+      - cloudpickle
+      - pytest
+      - more-itertools
+      # common environments
+      - atari-py
+      - procgen
+      # extra packages
+      - opencv-python
